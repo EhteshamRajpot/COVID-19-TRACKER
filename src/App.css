@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+}
+.table{
+    margin-top: 20px;
+    overflow: scroll;
+    height: 400px;
+    color: #6a5d5d;
+}
+.table tr:nth-of-type(odd){
+    background-color: #f3f2f8;
+}
+.table tr {
+    display: flex;
+    justify-content: space-between;
+}
+.table td {
+    padding: 0.5rem;
+}
+.App{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.app_left{
+    flex: 0.9;
+}
+.app_header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ contain: content;
+}
+
+.app_stats{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+@media(max-width: 990px){
+    .App{
+        flex-direction: column;
+    }
+
+}
